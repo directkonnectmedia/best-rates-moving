@@ -9,104 +9,55 @@ const Footer = (props) => {
       <div className="footer-container1">
         <footer className="footer-root">
           <div className="footer-container">
-            <div className="footer-branding">
-              <div className="footer-logo-group">
-                <div className="footer-icon-badge footer-brand-logo-badge">
-                  <img
-                    src="/Moving-Logo.png"
-                    alt="Best Rates Moving"
-                    width={864}
-                    height={288}
-                    className="footer-brand-logo-img"
-                  />
+            <div className="footer-main-grid">
+              <div className="footer-grid-col footer-grid-brand">
+                <div className="footer-logo-group">
+                  <div className="footer-icon-badge footer-brand-logo-badge">
+                    <img
+                      src="/Moving-Logo.png"
+                      alt="Best Rates Moving"
+                      width={520}
+                      height={173}
+                      className="footer-brand-logo-img"
+                    />
+                  </div>
                 </div>
               </div>
-              <p className="footer-tagline section-content">
-                Professional Valley Wide &amp; Same Day Moving Services across
-                Arizona. Fast, efficient, and friendly professionals for your
-                next home or office transition.
-              </p>
-            </div>
-            <nav aria-label="Footer Navigation" className="footer-nav">
-              <ul className="footer-nav-list">
-                <li className="footer-nav-item">
-                  <a href="Homepage">
-                    <div className="footer-nav-link">
-                      <span>Home</span>
-                    </div>
+              <div className="footer-grid-col footer-grid-services">
+                <h3 className="footer-column-heading">Our Services</h3>
+                <ul className="footer-services-list">
+                  <li>
+                    <a href="#services">
+                      <span>Residential</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#services">
+                      <span>Commercial</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#services">
+                      <span>Packing</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#quote-wizard">
+                      <span>Urgent Moving Services</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="footer-grid-col footer-grid-contact">
+                <h3 className="footer-column-heading">Contact Us</h3>
+                <div className="footer-contact-block">
+                  <a href="tel:4803693716" className="footer-contact-line">
+                    Phone: (480) 369-3716
                   </a>
-                </li>
-                <li className="footer-nav-item">
-                  <a href="#services">
-                    <div className="footer-nav-link">
-                      <span>Services</span>
-                    </div>
-                  </a>
-                </li>
-                <li className="footer-nav-item">
-                  <a href="#about">
-                    <div className="footer-nav-link">
-                      <span>About</span>
-                    </div>
-                  </a>
-                </li>
-                <li className="footer-nav-item">
-                  <a href="#gallery">
-                    <div className="footer-nav-link">
-                      <span>Gallery</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <div className="footer-contact-grid">
-              <a href="tel:4803693716">
-                <div className="footer-contact-item">
-                  <div className="footer-contact-icon">
-                    <svg
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span className="footer-contact-text section-content">
-                    (480) 369-3716
-                  </span>
+                  <p className="footer-contact-line footer-contact-location">
+                    Location: Phoenix &amp; Valley Wide 🌵
+                  </p>
                 </div>
-              </a>
-              <div className="footer-contact-item">
-                <div className="footer-contact-icon">
-                  <svg
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <g
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
-                      <circle r="3" cx="12" cy="10"></circle>
-                    </g>
-                  </svg>
-                </div>
-                <span className="footer-contact-text section-content">
-                  Phoenix &amp; Valley Wide, AZ
-                </span>
               </div>
             </div>
             <div className="footer-social">
@@ -143,7 +94,7 @@ const Footer = (props) => {
             </div>
             <div className="footer-bottom">
               <p className="footer-copyright">
-                &amp;copy; 2026 Best Rates Moving. Fast, Efficient &amp; Very
+                © 2026 Best Rates Moving. Fast, Efficient &amp; Very
                 Professional.
               </p>
               <div className="footer-legal">
@@ -174,7 +125,7 @@ const Footer = (props) => {
   const footerObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        const items = entry.target.querySelectorAll(".footer-branding, .footer-nav-item, .footer-contact-item, .footer-social-link, .footer-bottom")
+        const items = entry.target.querySelectorAll(".footer-grid-col, .footer-social-link, .footer-bottom")
         items.forEach((item, index) => {
           item.style.opacity = "0"
           item.style.transform = "translateY(20px)"

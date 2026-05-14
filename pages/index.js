@@ -83,7 +83,7 @@ const Home = (props) => {
             </div>
           </a>
         </section>
-        <section className="services-grid-section">
+        <section id="services" className="services-grid-section">
           <div className="services-container">
             <div className="services-header">
               <h2 className="section-title">
@@ -301,7 +301,7 @@ const Home = (props) => {
                     Same Day
                   </button>
                   <button onclick="nextStep(4)" className="wizard-opt-btn">
-                    ASAP
+                    Urgent
                   </button>
                   <button onclick="nextStep(4)" className="wizard-opt-btn">
                     Scheduled
@@ -341,7 +341,7 @@ const Home = (props) => {
             </div>
           </div>
         </section>
-        <section className="about-section">
+        <section id="about" className="about-section">
           <div className="about-container">
             <div className="about-grid">
               <div className="about-image-column">
@@ -432,7 +432,7 @@ const Home = (props) => {
             </div>
           </div>
         </section>
-        <section className="gallery-section">
+        <section id="gallery" className="gallery-section">
           <div className="gallery-wrapper">
             <div id="galleryCarousel" className="gallery-carousel">
               <div className="gallery-item">
@@ -520,7 +520,7 @@ const Home = (props) => {
                 <span className="stat-label">Customer Satisfaction</span>
               </div>
               <div className="stat-card">
-                <span className="stat-number">ASAP</span>
+                <span className="stat-number">Fast</span>
                 <span className="stat-label">Urgent Moving Services</span>
               </div>
               <div className="stat-card review-card">
@@ -638,10 +638,10 @@ const Home = (props) => {
             </div>
           </div>
         </section>
-        <section className="emergency-cta-section">
-          <div className="emergency-content">
-            <div className="emergency-alert-bar">
-              <div className="emergency-icon">
+        <section className="urgent-cta-section">
+          <div className="urgent-cta-content">
+            <div className="urgent-cta-bar">
+              <div className="urgent-cta-icon">
                 <svg
                   fill="none"
                   width="32"
@@ -657,7 +657,7 @@ const Home = (props) => {
                   <path d="M6 14a12 12 0 0 0 2.4 7.2a2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14M8 6v8"></path>
                 </svg>
               </div>
-              <div className="emergency-text">
+              <div className="urgent-cta-text">
                 <h2 className="section-title">
                   Need a move ASAP? Urgent Moving Services available.
                 </h2>
@@ -666,7 +666,7 @@ const Home = (props) => {
                   across Arizona.
                 </p>
               </div>
-              <div className="emergency-actions">
+              <div className="urgent-cta-actions">
                 <a href="tel:4803693716">
                   <div className="btn-lg btn-primary btn">
                     <span>Call/Text (480) 369-3716</span>
