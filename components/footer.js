@@ -15,8 +15,8 @@ const Footer = (props) => {
                   <img
                     src="/Moving-Logo.png"
                     alt="Best Rates Moving"
-                    width={220}
-                    height={74}
+                    width={864}
+                    height={288}
                     className="footer-brand-logo-img"
                   />
                 </div>

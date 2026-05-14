@@ -33,7 +33,7 @@ const Home = (props) => {
               poster="https://assets.mixkit.co/videos/31138/31138-thumb-720-0.jpg"
               autoPlay={true}
               playsInline={true}
-              className="hero-video"
+              className="hero-video hero-video-transition"
             ></video>
             <div className="hero-overlay"></div>
           </div>
@@ -185,7 +185,7 @@ const Home = (props) => {
                     <path d="M12 6v6l4 2"></path>
                   </svg>
                 </div>
-                <h3 className="service-card-title">24/7 Emergency Moves</h3>
+                <h3 className="service-card-title">Urgent Moving Services</h3>
                 <p className="section-content">
                   Last-minute or short-notice? We specialize in urgent
                   relocations with same-day availability across the Valley.
@@ -520,8 +520,8 @@ const Home = (props) => {
                 <span className="stat-label">Customer Satisfaction</span>
               </div>
               <div className="stat-card">
-                <span className="stat-number">24/7</span>
-                <span className="stat-label">Emergency Support</span>
+                <span className="stat-number">ASAP</span>
+                <span className="stat-label">Urgent Moving Services</span>
               </div>
               <div className="stat-card review-card">
                 <div className="star-rating">
@@ -659,7 +659,7 @@ const Home = (props) => {
               </div>
               <div className="emergency-text">
                 <h2 className="section-title">
-                  Need a Move ASAP? 24/7 Emergency Services!
+                  Need a move ASAP? Urgent Moving Services available.
                 </h2>
                 <p className="section-content">
                   Immediate booking available for same-day and last-minute moves
