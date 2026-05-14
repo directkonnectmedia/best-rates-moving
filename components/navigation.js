@@ -14,27 +14,13 @@ const Navigation = (props) => {
                 aria-label="Best Rates Moving Home"
                 className="navigation-logo-link"
               >
-                <div className="navigation-logo-icon">
-                  <svg
-                    width="32"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="32"
-                    viewBox="0 0 24 24"
-                  >
-                    <g
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2m10 0H9m10 0h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
-                      <circle r="2" cx="17" cy="18"></circle>
-                      <circle r="2" cx="7" cy="18"></circle>
-                    </g>
-                  </svg>
-                </div>
-                <span className="navigation-brand-name">Best Rates Moving</span>
+                <img
+                  src="/Moving-Logo.png"
+                  alt="Best Rates Moving"
+                  width={180}
+                  height={60}
+                  className="navigation-brand-logo-img"
+                />
               </div>
             </a>
             <div className="navigation-desktop-menu">
@@ -117,27 +103,13 @@ const Navigation = (props) => {
           <div className="navigation-overlay-header">
             <a href="Homepage">
               <div className="navigation-logo-link">
-                <div className="navigation-logo-icon">
-                  <svg
-                    width="32"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="32"
-                    viewBox="0 0 24 24"
-                  >
-                    <g
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2m10 0H9m10 0h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
-                      <circle r="2" cx="17" cy="18"></circle>
-                      <circle r="2" cx="7" cy="18"></circle>
-                    </g>
-                  </svg>
-                </div>
-                <span className="navigation-brand-name">Best Rates Moving</span>
+                <img
+                  src="/Moving-Logo.png"
+                  alt="Best Rates Moving"
+                  width={180}
+                  height={60}
+                  className="navigation-brand-logo-img"
+                />
               </div>
             </a>
             <button

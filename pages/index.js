@@ -39,12 +39,17 @@ const Home = (props) => {
           </div>
           <div className="hero-content-wrapper">
             <div className="hero-text-block">
-              <h1 className="hero-title home-hero-title">
-                Best Rates Moving – Valley Wide &amp; Same Day Options!
-              </h1>
-              <p className="hero-subtitle">
-                Fast, efficient, and professional residential and commercial
-                moving across Arizona. No move is too big or too small.
+              <div className="hero-logo-wrap">
+                <img
+                  src="/Moving-Logo.png"
+                  alt="Best Rates Moving"
+                  width={480}
+                  height={160}
+                  className="hero-logo-img"
+                />
+              </div>
+              <p className="hero-subtitle hero-valley-tagline">
+                Valley Wide &amp; Same Day Options!
               </p>
               <div className="hero-cta-group">
                 <a href="#quote-wizard">
