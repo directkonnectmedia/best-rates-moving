@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Script from 'dangerous-html/react'
-import { useTranslations } from 'next-intl'
 
 const Footer = (props) => {
   return (
@@ -60,56 +59,22 @@ const Footer = (props) => {
                 </div>
               </div>
             </div>
-            <div className="footer-social">
-              <a href="#">
-                <div aria-label="Facebook" className="footer-social-link">
-                  <svg
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M18 2a1 1 0 0 1 .993.883L19 3v4a1 1 0 0 1-.883.993L18 8h-3v1h3a1 1 0 0 1 .991 1.131l-.02.112l-1 4a1 1 0 0 1-.858.75L17 15h-2v6a1 1 0 0 1-.883.993L14 22h-4a1 1 0 0 1-.993-.883L9 21v-6H7a1 1 0 0 1-.993-.883L6 14v-4a1 1 0 0 1 .883-.993L7 9h2V8a6 6 0 0 1 5.775-5.996L15 2z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </div>
-              </a>
-              <a href="#">
-                <div aria-label="Instagram" className="footer-social-link">
-                  <svg
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M16 3a5 5 0 0 1 5 5v8a5 5 0 0 1-16 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm-4 5a4 4 0 0 0-3.995 3.8L8 12a4 4 0 1 0 4-4m4.5-1.5a1 1 0 0 0-.993.883l-.007.127a1 1 0 0 0 1.993.117L17.5 7.5a1 1 0 0 0-1-1"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <div className="footer-bottom">
-              <p className="footer-copyright">
-                © 2026 Best Rates Moving. Fast, Efficient &amp; Very
-                Professional.
+            <div className="footer-legal-bar">
+              <p className="footer-legal-inline">
+                © 2026 Best Rates Moving{' '}
+                <span className="footer-legal-sep" aria-hidden="true">
+                  |
+                </span>{' '}
+                Fast, efficient, and very professional{' '}
+                <span className="footer-legal-sep" aria-hidden="true">
+                  |
+                </span>{' '}
+                <a href="#">Privacy Policy</a>{' '}
+                <span className="footer-legal-sep" aria-hidden="true">
+                  |
+                </span>{' '}
+                <a href="#">Terms of Service</a>
               </p>
-              <div className="footer-legal">
-                <a href="#">
-                  <div className="footer-legal-link">
-                    <span>Privacy Policy</span>
-                  </div>
-                </a>
-                <span className="footer-legal-divider">|</span>
-                <a href="#">
-                  <div className="footer-legal-link">
-                    <span>Terms of Service</span>
-                  </div>
-                </a>
-              </div>
             </div>
           </div>
         </footer>
@@ -125,7 +90,7 @@ const Footer = (props) => {
   const footerObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        const items = entry.target.querySelectorAll(".footer-grid-col, .footer-social-link, .footer-bottom")
+        const items = entry.target.querySelectorAll(".footer-grid-col, .footer-legal-bar")
         items.forEach((item, index) => {
           item.style.opacity = "0"
           item.style.transform = "translateY(20px)"
