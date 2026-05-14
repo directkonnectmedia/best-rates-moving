@@ -27,12 +27,12 @@ const Home = (props) => {
         <section className="hero-section">
           <div className="hero-video-container">
             <video
-              src="https://videos.pexels.com/video-files/17899033/17899033-hd_1920_1080_24fps.mp4"
-              loop="true"
-              muted="true"
-              poster="https://images.pexels.com/videos/17899033/pictures/preview-0.jpeg"
-              autoPlay="true"
-              playsInline="true"
+              src="https://assets.mixkit.co/videos/31138/31138-720.mp4"
+              loop={true}
+              muted={true}
+              poster="https://assets.mixkit.co/videos/31138/31138-thumb-720-0.jpg"
+              autoPlay={true}
+              playsInline={true}
               className="hero-video"
             ></video>
             <div className="hero-overlay"></div>

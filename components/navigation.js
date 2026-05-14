@@ -14,13 +14,10 @@ const Navigation = (props) => {
                 aria-label="Best Rates Moving Home"
                 className="navigation-logo-link"
               >
-                <img
-                  src="/Moving-Logo.png"
-                  alt="Best Rates Moving"
-                  width={180}
-                  height={60}
-                  className="navigation-brand-logo-img"
-                />
+                <span className="navigation-brand-plate">
+                  <span className="navigation-brand-solar">Best Rates</span>
+                  <span className="navigation-brand-light">Moving</span>
+                </span>
               </div>
             </a>
             <div className="navigation-desktop-menu">
@@ -103,13 +100,10 @@ const Navigation = (props) => {
           <div className="navigation-overlay-header">
             <a href="Homepage">
               <div className="navigation-logo-link">
-                <img
-                  src="/Moving-Logo.png"
-                  alt="Best Rates Moving"
-                  width={180}
-                  height={60}
-                  className="navigation-brand-logo-img"
-                />
+                <span className="navigation-brand-plate navigation-brand-plate-lg">
+                  <span className="navigation-brand-solar">Best Rates</span>
+                  <span className="navigation-brand-light">Moving</span>
+                </span>
               </div>
             </a>
             <button
